@@ -1,0 +1,124 @@
+/* 
+ * Define as configurações padrão para todos os elementos, 
+ * zerando margens, preenchimentos e usando a caixa de modelo 
+ * de caixa de borda 
+ **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilo para os títulos principais */
+.title {
+    background-color: #3C81E0;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Croissant One', cursive;
+}
+/* Estilo para o subtítulo */
+.subTitle{
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+}
+/* Container para os produtos no carrinho */
+.carrinho-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin : 10px;
+    text-align: center;
+}
+/* Estilo para o título dos cusos */
+.carrinho-container h2 {
+    font-size: 20px;
+    text-align: center;
+}
+/*Estilo para os preços*/
+.preco{
+    font-weight: bolder;
+    text-align: center;
+}
+/* Estilo para cada produto individual */
+.produto {
+    width: 100%;
+    padding: 1%;
+    text-align: left;
+    border: 1.9px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 2);
+    /* Alinhe o texto à esquerda */
+}
+/* Estilo para os link para add no carrinho*/
+.produto a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #5fb382;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Estilo para os links dos produtos */
+.produto img {
+    width: 100%;
+    /* Defina a largura da imagem desejada */
+    height: auto;
+    /* Isso garantirá que a imagem mantenha a proporção corretamente */
+    vertical-align: middle;
+    /* Alinhe verticalmente no centro */
+    border-radius: 5px;
+}
+/* Estilo para cada item no carrinho */
+.carrinho-item {
+    text-align: center;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    border-bottom: 2px dotted #245b6b;
+}
+/* Estilo para o dentro dos itens do carrinho */
+.carrinho-item p {
+    font-size: 19px;
+    color: rgb(18, 11, 11);
+    padding-right: 30px;
+}
+/* Estilo para o carrinho em telas pequenas */
+#carrinho{
+    margin-top: 10%;
+}
+/* Estilos para telas pequenas (até 600px de largura) */
+@media (max-width: 600px) {
+/* Altera o layout do carrinho para uma única coluna 
+   ou duas em telas menores */
+    .carrinho-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* Produtos ocupam toda a largura em telas menores */
+    .produto {
+        max-width: 100%;
+        /* Produto ocupa toda a largura em telas menores */
+    }
+    /*Estilo para os preços em telas menores*/
+    .preco{
+        font-weight: bolder;
+        text-align: center;
+        font-size: 14px;
+    }
+/* Reduz o tamanho do título em telas menores */
+    .title {
+        font-size: 24px;
+    }
+  /* Reduz o tamanho do título do carrinho em telas menores */
+    .carrinho-container h2 {
+        font-size: 14px;
+    }
+   /* Centraliza o texto do parágrafo em telas menores */
+    p {
+        text-align: center;
+    }
+}
