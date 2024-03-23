@@ -1,0 +1,104 @@
+ /* Estilos para telas pequenas (exemplo: smartphones) */
+ @media (min-width: 769px) and (max-width: 1024px) {
+            h2 {
+               
+                background-color: rgb(255, 255, 255);
+                width: 100%;
+                padding: 30px;
+                text-align: center;
+                color: rgb(6, 6, 6);
+                font-size: 24px; /* Tamanho de fonte diferente para o título 2 em telas pequenas */
+                margin: 20px 10px; /* Margens menores para melhor ajuste */
+                text-align: start;
+                
+                box-sizing: border-box;
+                font-family: 'Croissant One', cursive;
+                border-radius: 10px;
+            }
+        
+            .title2 {
+                font-size: 14px;
+                margin: 20px 230px;
+                
+                background-color: rgb(255, 255, 255);
+        width: 50%; 
+                padding: 20px;
+                text-align: center;
+                color: rgb(6, 6, 6);
+              
+            }
+            body {
+                font-size: 14px;
+                background-color: rgb(16, 15, 15);
+            text-align: center;
+            }
+            .carrinho-item {
+                margin: 15px;
+                color: #f5f5f5;
+                font-family: 'Croissant One', cursive;
+            }    
+        }
+         /* Estilos para telas pequenas (exemplo: smartphones) */
+        
+        
+         /* Estilos para telas pequenas (exemplo: smartphones) */
+         @media (min-width: 769px) and (max-width: 1024px) {
+            .carrinho-container {
+                flex-wrap: nowrap; /* Permitir que os produtos quebrem para uma nova linha */
+                justify-content: center; /* Centralizar produtos em telas pequenas */
+                margin-top: 20px; /* Margem menor em telas pequenas */
+            }
+            
+            .produto {
+                width: 80%; /* Ajustar a largura dos produtos em telas pequenas */
+                
+                width: 50%;
+                display: grid;
+                margin: 10PX 90PX;
+                padding: 10px 130px;
+                border-radius: 1%;
+                border: 2px solid white;
+            }
+            
+            .produto img {
+                width: 200%;
+                gap: 15PX;
+                width: 550px;
+                height: 300px;
+                margin: 10px -80px;
+            }
+        }
+        /* Estilos para telas pequenas (exemplo: smartphones) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .button {
+                background-color: rgb(246, 246, 246);
+                height: 20px;
+                text-decoration: none;
+                color: black;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                margin: 10PX;
+                border:5px solid #f5f5f5;
+                
+                font-size: 14px; /* Tamanho de fonte menor para botões em telas pequenas */
+               
+                padding: 10px 20px; /* Espaçamento menor para botões em telas pequenas */
+            }
+            
+            .button2 {
+                font-size: 14px; /* Tamanho de fonte menor para o segundo botão em telas pequenas */
+                background-color: rgb(246, 246, 246);
+                color: black;
+                font-family: 'Croissant One', cursive;
+                font-weight: bold;
+               
+            }
+            
+    img.carrinho1{
+
+
+        position: absolute;
+        top: -50px;
+     }
+        }
+     
